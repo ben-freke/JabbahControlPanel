@@ -19,7 +19,7 @@ include('variables.php');
         /**
          *
          * Content should fit between the Header and Footer, excluding content to be put in the header and footer.
-         *
+         *Test
          */
 
 
