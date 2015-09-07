@@ -119,7 +119,7 @@ include('variables.php');
  <div class='row'>
                 <div class='col-md-6 col-md-offset-3'>
                     <div class='panel panel-default'>
-  <div class='panel-heading'>Your Email</div>
+  <div class='panel-heading'>Your Email (Coming Soon)</div>
   <div class='panel-body'>
   <div class='text-center'>
     <p><a href='#'><button type='button' class='btn btn-default'>View Your Email</button></p></a>
