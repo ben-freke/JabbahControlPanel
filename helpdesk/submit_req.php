@@ -11,7 +11,7 @@ include('../db_connect.php');
 
 
 if ($logon == true){
-   echo $query = "INSERT INTO helpdesk_req (userID,title,body,progress) VALUES ('".$userID."','".$_POST['title']."','".$_POST['body']."', 10)";
+    $query = "INSERT INTO helpdesk_req (userID,title,body,progress) VALUES ('".$userID."','".$_POST['title']."','".$_POST['body']."', 10)";
 
     mysqli_query($con, $query);
     $newID = mysqli_insert_id($con);
@@ -20,7 +20,7 @@ if ($logon == true){
 
     mysqli_query($con, $query);
 
-    //header( 'Location: /helpdesk/' ) ;
+    header( 'Location: /helpdesk/' ) ;
 }
 
 else{
