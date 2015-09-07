@@ -123,7 +123,7 @@ include('variables.php');
   <div class='panel-body'>
   <div class='text-center'>
     <p><a href='#'><button type='button' class='btn btn-default'>View Your Email</button></p></a>
-    <p>Coming Soon</p>
+    <p>Coming Soon!</p>
 
     </div>
   </div>
