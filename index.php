@@ -106,7 +106,7 @@ include('variables.php');
   <div class='panel-body'>
   <div class='text-center'>
 
-  <form action='https://".$row['url']."/wp-login.php' method='post'>
+  <form action='https://".$row['url']."/wp-login.php' method='post' target='_blank'>
         <input type='hidden' name='log' value='".$row['usr']."'>
         <input type='hidden' name='pwd' value='".$row['pwd']."'>
                   <button type='submit' class='btn btn-default'>Manage My Website</button>
