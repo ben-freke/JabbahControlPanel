@@ -42,6 +42,8 @@ echo '
             <ul class="nav navbar-nav">
                 <li><a href="/">Dashboard <span class="sr-only">(current)</span></a></li>
                 <li><a href="/helpdesk/">Helpdesk <span class="sr-only"></span></a></li>
+                <li><a href="/kb/">Knowledge Base <span class="sr-only"></span></a></li>
+
 
 
             ';
