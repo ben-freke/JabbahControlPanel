@@ -24,7 +24,6 @@ include('variables.php');
 
 
     if ($logon == true){
-        include('functions.php');
 
         $query = "SELECT * FROM site_info WHERE userID = $userID";
 
@@ -64,6 +63,17 @@ include('variables.php');
                                     </h4>
                                     ";
                                 }
+                                $url = $row['url'];
+                                $key = $row['wordpressAPI'];
+                                $str = file_get_contents('http://stats.wordpress.com/csv.php?api_key='.$key.'&blog_uri='.$url.'&table=views&days=7');
+                                $csv = str_getcsv($str);
+                                $i = 2;
+                                while ($i < 9){
+                                    $pieces = explode('"', $csv[$i]);
+                                    $views = $views + $pieces[0];
+                                    $i++;
+                                }
+
                             echo "
 
                         </div>
@@ -76,8 +86,7 @@ include('variables.php');
                             <h4 class='text-center'>
                                 <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>
                                 </br>
-                                </br>
-                                ".$views." views this week
+                                </br>".$views." views this week
                             </h4>
                         </div>
                     </div>

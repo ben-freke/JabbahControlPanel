@@ -40,6 +40,18 @@ if (($logon == true) && ($type == 0)){
             <label for="message">Wordpress Password</label>
             <input type="text" class="form-control" id="title" name="wp_pwd" placeholder="Wordpress Password">
         </div>
+        <div class="form-group">
+            <label for="message">Wordpress API</label>
+            <input type="text" class="form-control" id="title" name="wp_api" placeholder="Wordpress Password">
+        </div>
+        <div class="form-group">
+            <label for="message">Google API</label>
+            <input type="text" class="form-control" id="title" name="google_api" placeholder="Wordpress Password">
+        </div>
+        <div class="form-group">
+            <label for="message">Uptime API</label>
+            <input type="text" class="form-control" id="title" name="up_api" placeholder="Wordpress Password">
+        </div>
          <div class="form-group">
             <label for="message">User ID</label>
             <input type="text" class="form-control" id="title" name="userID" placeholder="User ID">
