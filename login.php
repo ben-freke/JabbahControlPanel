@@ -23,6 +23,6 @@ $query = "INSERT INTO login_req (userID,loginHash, expTime, ipAddress) VALUES ('
 
 mysqli_query($con, $query);
 
-setcookie("Logon", $key, time()+3600);
+setcookie("Logon", $key, time()+3600, '/');
 
 header( 'Location: /' ) ;

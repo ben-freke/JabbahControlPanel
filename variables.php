@@ -17,7 +17,7 @@ global $type;
 
 if(isset($_COOKIE['Logon'])) {
 
-    $query = "SELECT * FROM login_req WHERE loginHash = '".$_COOKIE['Logon']."'";
+    $query = "SELECT * FROM login_req WHERE loginHash = '".$_COOKIE['Logon']."' ORDER BY loginTime ASC";
     $key = $_COOKIE['Logon'];
     $result = mysqli_query($con, $query);
 
@@ -31,7 +31,7 @@ if(isset($_COOKIE['Logon'])) {
     $row = mysqli_fetch_array($result);
     $name = ($row['firstName']." ". $row['lastName']);
     $type = $row['type'];
-    setcookie("Logon", $key, time()+3600);
+    setcookie("Logon", $key, time()+3600, '/');
 
 
 

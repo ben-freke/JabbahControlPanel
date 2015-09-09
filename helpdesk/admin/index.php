@@ -6,12 +6,13 @@
  * Time: 11:36
  */
 
+
 include('../../db_connect.php');
 include('../../variables.php');
-if (($logon == true) and ($type == 0)){
+
+if (($logon == true) && ($type == 0)){
+    $pagename = 'Helpdesk Manager';
     include('../../header.php');
-
-
 
     echo '
 
@@ -24,6 +25,7 @@ if (($logon == true) and ($type == 0)){
           <th>#</th>
           <th>Title</th>
           <th>Submitted</th>
+          <th>User</th>
           <th>Progress</th>
         </tr>
       </thead>
@@ -43,11 +45,14 @@ if (($logon == true) and ($type == 0)){
             echo '<tr style="color:grey">';
         }
 
+
+
         echo '
 
           <th scope="row"><a href="view_req.php?id=' . $row["reqNo"] . '">' . $row["reqNo"] . '</a></th>
           <td>' . $row["title"] . '</td>
           <td>' . $row["timeSubmitted"] . '</td>
+          <td>'.$row["userID"].'</td>
           <td>
             <div class="progress">
               <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: ' . $row["progress"] . '%">
