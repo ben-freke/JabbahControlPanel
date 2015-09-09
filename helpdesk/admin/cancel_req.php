@@ -6,8 +6,9 @@
  * Time: 13:09
  */
 
-include('../../variables.php');
 include('../../db_connect.php');
+include('../../variables.php');
+
 
 if ($logon == true && $type==0){
     $query = "SELECT * FROM helpdesk_req WHERE reqNo = ".$_GET['id']."";

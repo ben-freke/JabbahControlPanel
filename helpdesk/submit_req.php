@@ -5,8 +5,8 @@
  * Date: 04/09/15
  * Time: 11:30
  */
+include('../../db_connect.php');
 include('../variables.php');
-include('../db_connect.php');
 
 
 
