@@ -78,7 +78,8 @@ include('variables.php');
 
                         </div>
                     </div>
-                    </div>
+                </div>
+
               <div class='col-md-2''>
                 <div class='panel panel-primary'>
                     <div class='panel-heading'>Viewer Stats</div>
@@ -91,6 +92,7 @@ include('variables.php');
                         </div>
                     </div>
                 </div>
+
               <div class='col-md-2''>
                 <div class='panel panel-primary'>
                     <div class='panel-heading'>Google Clicks</div>
@@ -108,46 +110,42 @@ include('variables.php');
               </div>
               </div>
 
-              <div class='row'>
-                <div class='col-md-6 col-md-offset-3'>
-                    <div class='panel panel-default'>
-  <div class='panel-heading'>Your Website</div>
-  <div class='panel-body'>
-  <div class='text-center'>
-
-  <form action='https://".$row['url']."/wp-login.php' method='post' target='_blank'>
-        <input type='hidden' name='log' value='".$row['usr']."'>
-        <input type='hidden' name='pwd' value='".$row['pwd']."'>
-                  <button type='submit' class='btn btn-default'>Manage My Website</button>
-
-        </form>
-
-
-
-    </div>
-  </div>
-  </div>
-
-
+<div class='row'>
+   <div class='col-md-6 col-md-offset-3'>
+      <div class='panel panel-default'>
+         <div class='panel-heading'>Your Website</div>
+            <div class='panel-body'>
+                <div class='text-center'>
+                    <form action='https://".$row['url']."/wp-login.php' method='post' target='_blank'>
+                        <input type='hidden' name='log' value='".$row['usr']."'>
+                        <input type='hidden' name='pwd' value='".$row['pwd']."'>
+                        <button type='submit' class='btn btn-default'>Manage My Website</button>
+                    </form>
                 </div>
-              </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
 
+
+<!--
  <div class='row'>
-                <div class='col-md-6 col-md-offset-3'>
-                    <div class='panel panel-default'>
-  <div class='panel-heading'>Your Email</div>
-  <div class='panel-body'>
-  <div class='text-center'>
-    <p><a href='#'><button type='button' class='btn btn-default'>View Your Email</button></p></a>
-    <p>Coming Soon</p>
-
-    </div>
-  </div>
-  </div>
-
-
+    <div class='col-md-6 col-md-offset-3'>
+        <div class='panel panel-default'>
+            <div class='panel-heading'>Your Email</div>
+                <div class='panel-body'>
+                    <div class='text-center'>
+                        <p><a href='#'><button type='button' class='btn btn-default'>View Your Email</button></p></a>
+                        <p>Coming Soon</p>
+                    </div>
                 </div>
-              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+-->
 
 
 
