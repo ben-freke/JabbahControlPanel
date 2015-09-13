@@ -21,6 +21,8 @@ echo '
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="/ckeditor/ckeditor.js"></script>
+
 </head>
 <body>
 
@@ -56,6 +58,8 @@ echo '
                         <li><a href="/users">Users</a></li>
                         <li><a href="/sites/">Sites</a></li>
                         <li><a href="/helpdesk/admin">Helpdesk</a></li>
+                        <li><a href="/kb/admin">Knowledge Base</a></li>
+
                     </ul>
                 </li>
                 ';
