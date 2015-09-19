@@ -29,6 +29,7 @@ if(isset($_COOKIE['Logon'])) {
     $query = "SELECT * FROM users WHERE userID = ".$userID."";
     $result = mysqli_query($con, $query);
     $row = mysqli_fetch_array($result);
+    $lastName = $row['lastName'];
     $name = ($row['firstName']." ". $row['lastName']);
     $type = $row['type'];
     setcookie("Logon", $key, time()+3600, '/');

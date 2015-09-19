@@ -34,6 +34,11 @@ if ($logon == true){
             <label for="message">Message</label>
             <textarea class="form-control" id="body" name="body" placeholder="Message" rows="5"></textarea>
         </div>
+        <div class="form-group">
+            <label for="message">Supporting Files</label>
+            <p>To upload multiple files, <a href=http://www.wikihow.com/Zip-Files-Together">compress</a> them and upload the .zip file. <a href="upload_help.html">Learn more</a> about file uploads.</p>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

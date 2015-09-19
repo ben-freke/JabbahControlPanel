@@ -18,6 +18,31 @@ if ($logon == true){
     include('changeEmail.php');
     include('viewPayment.php');
 
+    if ($_GET['error'] == 1){
+        echo '
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="alert alert-danger" role="alert">
+                        An <b>error</b> occured when changing your password. Check your passwords match and try again.
+                    </div>
+                </div>
+            </div>
+
+        ';
+    }
+
+    if ($_GET['success'] == 1){
+        echo '
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="alert alert-success" role="alert">
+                        Your password was changed successfully.
+                    </div>
+                </div>
+            </div>
+
+        ';
+    }
 
 
     echo '
@@ -37,7 +62,6 @@ if ($logon == true){
   <div class="panel-body">
   <div class="text-center">
   <p><a class="btn btn-default" data-toggle="modal" data-target="#changePW" role="button">Change Your Password</a></p>
-  <p><a class="btn btn-default" data-toggle="modal" data-target="#changeEmail" role="button">Change Your Email</a></p>
   <p><a class="btn btn-default" data-toggle="modal" data-target="#viewPayInfo" role="button">View Your Payment Details</a></p>
 
     </div>
