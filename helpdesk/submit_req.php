@@ -17,11 +17,10 @@ if ($logon == true){
 
     $query = "INSERT INTO req_updates (reqNo,status,userID) VALUES ('".$newID."','Request Opened', $userID)";
 
-   // mysqli_query($con, $query);
+   mysqli_query($con, $query);
 
-    include('file_upload.php');
 
-   // header( 'Location: /helpdesk/' ) ;
+   header( 'Location: /helpdesk/' );
 }
 
 else{
