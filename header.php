@@ -23,6 +23,10 @@ echo '
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="/ckeditor/ckeditor.js"></script>
 
+    <meta charset="UTF-8">
+<meta name="description" content="This is the Jabbah Control Panel. Jabbah users are able to use this tool to manage websites, submit helpdesk requests and learn about the Web.">
+<meta name="keywords" content="Jabbah Control Panel, Jabbah, Control Panel">
+
 </head>
 <body>
 

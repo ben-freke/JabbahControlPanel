@@ -160,7 +160,7 @@ include('variables.php');
     }
 
     else{
-        $pagename = 'Login';
+        $pagename = 'Jabbah Control Panel - Login';
         include('bare_header.php');
     echo '
 
