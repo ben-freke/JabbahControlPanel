@@ -31,6 +31,6 @@ if ($row['userID']){
 }
 
 else{
-    header( 'Location: /?error=0' ) ;
+    header( 'Location: /?error=1' ) ;
 }
 

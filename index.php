@@ -168,6 +168,8 @@ include('variables.php');
               <div class="col-md-4 col-md-offset-4">
               <h2 class="text-center" style="color:white;">Jabbah Control Panel</h2>
               <br>
+              '; if ($_GET['error']==1) echo '<div class="alert alert-danger" role="alert">Your Username or Password is incorrect</div>';
+                echo '
                 <form action="login.php" method="post">
                   <div class="form-group">
                     <label style="color:white;" for="exampleInputEmail1">Email Address</label>
@@ -182,6 +184,8 @@ include('variables.php');
                   <button type="submit" class="btn btn-default">Login</button>
                   </div>
                 </form>
+                '; if ($_GET['error']==1) echo '<br><p class="text-center"><a href="mailto:password@jabbah.co.uk">Forgotten Your Password?</a></p>';
+        echo '
               </div>
               </div>
         </div>
