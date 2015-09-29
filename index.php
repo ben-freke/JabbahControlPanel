@@ -169,8 +169,12 @@ include('variables.php');
               <h2 class="text-center" style="color:white;">Jabbah Control Panel</h2>
               <br>
               '; if ($_GET['error']==1) echo '<div class="alert alert-danger" role="alert">Your Username or Password is incorrect</div>';
+                   echo ' <form action="login.php?url='.$_GET['url'].'" method="post">';
+
+                /**else{
+                    echo '<form action="login.php" method="post">';
+                }**/
                 echo '
-                <form action="login.php" method="post">
                   <div class="form-group">
                     <label style="color:white;" for="exampleInputEmail1">Email Address</label>
                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">

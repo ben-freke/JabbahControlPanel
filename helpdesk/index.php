@@ -124,5 +124,6 @@ if ($logon == true){
 
 }
  else {
-     header( 'Location: /' ) ;
+     $url = $_SERVER['REQUEST_URI'];
+     header( 'Location: /?url='.$_SERVER['REQUEST_URI'].'' ) ;
  }

@@ -26,11 +26,11 @@ if ($row['userID']){
     mysqli_query($con, $query);
 
     setcookie("Logon", $key, time()+3600, '/');
-
-    header( 'Location: /' ) ;
+    if ($_GET['url'] != null) header( 'Location: '.$_GET['url'].'');
+    else header( 'Location: /' );
 }
 
 else{
-    header( 'Location: /?error=1' ) ;
+    header( 'Location: /?error=1&url='.$_GET['url'].'' ) ;
 }
 

@@ -139,6 +139,7 @@ if ($logon == true && $type == 0){
 }
 
 else{
-    header( 'Location: /' ) ;
+    $url = $_SERVER['REQUEST_URI'];
+    header( 'Location: /?url='.$_SERVER['REQUEST_URI'].'' ) ;
 }
 
