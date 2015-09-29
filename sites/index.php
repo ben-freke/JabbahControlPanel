@@ -89,6 +89,7 @@ if (($logon == true) && ($type == 0)){
           <th>Site ID</th>
           <th>URL</th>
           <th>User ID</th>
+          <th></th>
 
         </tr>
       </thead>
@@ -109,6 +110,7 @@ if (($logon == true) && ($type == 0)){
           <td>' . $row["siteID"] . '</td>
           <td><a href="https://' . $row["url"] . '">' . $row["url"] . '</a></td>
           <td>'.$row["userID"].'</td>
+          <td><a href="manage.php?id=' . $row["siteID"] . '">Manage</a></td>
 
         </tr>
         ';

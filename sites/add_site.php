@@ -10,7 +10,7 @@ include('../variables.php');
 
 
 if (($logon == true) && ($type == 0)){
-    $query = "INSERT INTO site_info (userID,url,usr,pwd) VALUES ('".$_POST['userID']."','".$_POST['url']."','".$_POST['wp_usr']."', '".$_POST['wp_pwd']."')";
+    $query = "INSERT INTO site_info (userID,url,usr,pwd,wordpressAPI) VALUES ('".$_POST['userID']."','".$_POST['url']."','".$_POST['wp_usr']."', '".$_POST['wp_pwd']."', '".$_POST['wp_api']."')";
 
     mysqli_query($con, $query);
 
