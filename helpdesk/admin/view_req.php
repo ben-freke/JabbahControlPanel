@@ -118,6 +118,11 @@ if ($logon == true && $type == 0){
             <input type="text" class="form-control" id="status" name="status" placeholder="Status">
           </div>
 
+          <div class="form-group">
+            <label for="subject">Progress</label>
+            <input type="number" min="0" step="1" max="100" class="form-control" id="progress" name="progress" placeholder="0">
+          </div>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
