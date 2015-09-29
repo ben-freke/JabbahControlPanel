@@ -77,7 +77,7 @@ echo '
       <tbody>
       ';
 
-$query = "SELECT * FROM req_updates WHERE reqNo = ".$_GET['id']."";
+$query = "SELECT * FROM req_updates WHERE reqNo = ".$_GET['id']." ORDER BY time DESC";
 
 $result = mysqli_query($con, $query) or die(mysql_error());
 
