@@ -9,8 +9,8 @@
 include('../db_connect.php');
 include('../variables.php');
 include('../header.php');
-
-echo '
+if (($logon == true) && ($type == 0)){
+    echo '
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -92,28 +92,28 @@ echo '
       <tbody>
       ';
 
-$query = "SELECT * FROM users";
+    $query = "SELECT * FROM users";
 
-$result = mysqli_query($con, $query) or die(mysql_error());
-
-
-while($row = mysqli_fetch_array($result)){
+    $result = mysqli_query($con, $query) or die(mysql_error());
 
 
-    echo '
+    while($row = mysqli_fetch_array($result)){
+
+
+        echo '
          <tr>
           <td>'.$row["userID"].'</td>
           <td>'.$row["firstName"].' '.$row["lastName"].'</td>
           <td>'.$row["email"].'</td>
           <td>';
-            if ($row['type'] == 0){
-                echo 'Admin';
-            }
-            elseif ($row['type'] == 1){
-                echo 'User';
-            }
+        if ($row['type'] == 0){
+            echo 'Admin';
+        }
+        elseif ($row['type'] == 1){
+            echo 'User';
+        }
 
-            echo '</td>
+        echo '</td>
             <td>
                 <a href="manage.php?id='.$row["userID"].'">Manage</a>
             </td>
@@ -121,11 +121,11 @@ while($row = mysqli_fetch_array($result)){
         ';
 
 
-}
+    }
 
 
 
-echo '
+    echo '
 
       </tbody>
     </table>
@@ -133,5 +133,8 @@ echo '
   </div>
 
   ';
+
+}
+else{header( 'Location: /' ) ;}
 
 include('../footer.php');
